@@ -40,3 +40,7 @@ Exercice 2 :
 - Q7 : On ne peut pas push car il y a une modification sur le dépot distant qui n'est pas syncronisé avec le dépot local.
 
 - git fetch + git merge important pour modif des conflict
+
+Exercice 3 :
+
+- Notion pour écraser un contenu et forcer l'écrasement sur le dépot distant : git reset et --force
