@@ -4,19 +4,31 @@
 
 ---
 
+- Qu'est ce que Git ? <br>
+C'est un gestionnaire de version
+
+- Qu'est ce qu'un gestinnaire de version ? <br>
+C'est un logiciel qui permet de gérer l'historique de développement d'un projet
+
 - Qu'est-ce qu'un _dépôt Git_ ? <br>
   Un dépot git est un endroit où est stocké du code. Sur ce dépot git nous pouvons ajouter du code, le modifier ou encore le supprimer. Plusieurs personnes peuvent avoir accès à ce dépot en fonction de leurs roles.
+  * Dépot local
+  * Dépot distant
 
 - Qu'est-ce qu'un _fork_ Git ? <br>
-  Un fork git est une copie modifié du dépot qui peut etre proposé pour etre implémenté au sein du dépot git. Ce fork tout le monde peut le faire si le dépot est en public
+  C'est une copie physique d'un dépot git distant qu'on est en train de dupliquer totalement indépendante du projet initale. Il reste le principe de fusion à l'aide de pull/merge request.
 
 - Quelle est la différence entre Git et GitLab/GitHub ? <br>
   Git est un outil de versioning en local de projet alors que Gitlba / GitHub sont des service en ligne qui se sont démocratisé plus tard qui permettent de faire travailler plusieurs personnes en meme temps sur un meme projet à travers internet.
 
 - Que fait `git clone` ? <br>
-  La commande git clone permet de récupérer le contenu du dépot quand il est suivis d'une adresse web. Cela va copier les fichier distant sur la machien à l'endroit où est exécuté la commande.
+  Prend le dépot distant et le copie localement pour créer un dépot local
 
 - Quelle est la différence entre `git add` et `git commit` ? Pourquoi avoir séparé les deux commandes ? <br>
+  git add : prépare les modification, ajoute dans l'index de modifications des informations qui préparent la sauvegarde.
+  git commit : va créer un nouveau point dans l'historique, va ajouter le contenu de l'index dans cet historique et va vider l'index
+  pour bien vérifier ce que l'on archive ou non
+
   La commande git add permet d'ajouter les fichiers modifié pour les versionner. La commande git commit permet de pack c'est fichier modif et ajouter un description à ce package. Elles ont été séparé car cela nous permet de mieux versionner est sélectionner nos modification. On peut faire plusieurs commit en meme temps tout en sélectionnant nos ficiher qui sont pris par le commit en question.
 
 - À quoi correspond le fichier `.gitignore` ? <br>
